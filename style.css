@@ -190,12 +190,10 @@ height: 100%;
     left: -18px;
    
 }
-.section-3-img {
-    width: 128px;
-}
-.section-3-img img {
+.categories img {
     width: 100%;
 }
+
 
 .item-category {
     font-size: 24px;
