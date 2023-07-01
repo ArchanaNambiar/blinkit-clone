@@ -91,7 +91,10 @@ header .navbar{
 .searchbar .fa-magnifying-glass{
     width: 20px;
     height: 20px;
-    color: var(--color-black);
+    color: black;
+}
+.profile{
+    display: none;
 }
 .login{
     width:162px;
@@ -180,9 +183,11 @@ header .navbar{
 height: 100%;
 }
 .categories {
-    margin-top: 16px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    width: 103%;
+    position: relative;
+    left: -18px;
    
 }
 .section-3-img {
@@ -387,6 +392,13 @@ footer{
         align-items: start !important;
         gap: 10px;
     }
+    .profile{
+        display: inline;
+         position: absolute;
+        right: 0px;
+        margin-top: 16px;
+        margin-right: 16px;
+        }
     .wrapper{
         top:0px;
         justify-content: start;
@@ -403,6 +415,9 @@ footer{
     .categories{
         width: 100%;
         left: 0px;
+    }
+    .categories{
+        grid-template-columns: repeat(4,25%);
     }
     .banner-2{
         margin-left: 7px;
